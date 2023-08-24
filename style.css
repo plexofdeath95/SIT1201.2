@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#currentInfo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#discountInfo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-field, .form-input {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: 2px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    font-weight: 300;
+    transition: 0.25s all ease-out;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+th, td {
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5em;
+    color: #222;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+/* Footer */
+.custom-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    p {
+        font-size: 3em;
+    }
+
+    #navbar, #menu, #currentInfo, #discountInfo {
+        padding: 20px;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    th, td {
+        font-size: 3em;
+        font-weight: 300;
+        text-align: center;
+        padding: 0.5em;
+        color: #222;
+    }
+}
+
+/* Tablet responsiveness */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 30px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+
+    th, td {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: center;
+        padding: 0.5em;
+        color: #222;
+    }
+
+    
+    #navbar, #menu, #currentInfo, #discountInfo {
+        padding: 25px;
+    }
+
+    #menu {
+        flex-direction: row;
+    }
+}
+
