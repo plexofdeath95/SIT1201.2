@@ -3,26 +3,26 @@ function initPage() {
     var welcomeMessage = "Welcome to Sam's Deli!";
     document.getElementById("welcomeMessage").innerText = welcomeMessage.toUpperCase(); // toUpperCase()
     var welcomeText = "Welcome to the best Deli in town.";
-    welcomeText = welcomeText.replace("best", "greatest"); // replace()
-    welcomeText = welcomeText.concat(" Enjoy your meal!"); // concat()
-    welcomeText = welcomeText.slice(0, 36); // slice()
-    document.getElementById("welcomeText").innerText = welcomeText.trim(); // trim()
+    welcomeText = welcomeText.replace("best", "greatest"); // replace() a word
+    welcomeText = welcomeText.concat(" Enjoy your meal!"); // concat() concatenate two strings
+    welcomeText = welcomeText.slice(0, 36); // slice() a string from index 0 to 36
+    document.getElementById("welcomeText").innerText = welcomeText.trim(); // trim() removes whitespace from both sides of a string
 
     // Number Methods
-    var prices = [5.99, 7.99, 8.99, 6.49];
-    var total = prices.reduce((a, b) => a + b, 0); // reduce()
-    var averagePrice = (total / prices.length).toFixed(2); // toFixed()
-    var maxPrice = Math.max(...prices); // Math.max()
-    var minPrice = Math.min(...prices); // Math.min()
-    var roundedAverage = Math.round(averagePrice); // Math.round()
+    var prices = [5.99, 7.99, 8.99, 6.49]; // array of prices
+    var total = prices.reduce((a, b) => a + b, 0); // reduce() to sum all prices
+    var averagePrice = (total / prices.length).toFixed(2); // toFixed() to round to 2 decimal places
+    var maxPrice = Math.max(...prices); // Math.max() to find max price
+    var minPrice = Math.min(...prices); // Math.min() to find min price
+    var roundedAverage = Math.round(averagePrice); // Math.round() to round to nearest integer
 
     // Array Methods
     var menuItems = ["Burger", "Pizza", "Pasta", "Salad"];
-    var menuList = menuItems.join(", "); // join()
-    menuItems.sort(); // sort()
-    menuItems.push("Soda"); // push()
-    menuItems.pop(); // pop()
-    var firstItem = menuItems.shift(); // shift()
+    var menuList = menuItems.join(", "); // join() to create a string from an array
+    menuItems.sort(); // sort() to sort an array
+    menuItems.push("Soda"); // push() to add an item to the end of an array
+    menuItems.pop(); // pop() to remove the last item of an array
+    var firstItem = menuItems.shift(); // shift() to remove the first item of an array
 
     document.getElementById("menu").innerHTML = `
     <table>
@@ -38,7 +38,7 @@ function initPage() {
 
 // Date Methods
 var date = new Date();
-var currentYear = date.getFullYear(); // getFullYear()
+var currentYear = date.getFullYear(); // getFullYear() 
 var month = date.toLocaleString('default', { month: 'long' }); // toLocaleString()
 var day = date.getDate(); // getDate()
 var hours = date.getHours(); // getHours()
